@@ -2,6 +2,7 @@
 # 기지국 설치
 # Summer/Winter Coding(~2018)
 # https://minnnne.tistory.com/46
+# https://velog.io/@dramatic/Algorithm-%EA%B8%B0%EC%A7%80%EA%B5%AD-%EC%84%A4%EC%B9%98
 
 import math
 
