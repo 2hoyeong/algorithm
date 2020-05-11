@@ -1,5 +1,6 @@
 # https://programmers.co.kr/learn/courses/30/lessons/42583
 # 다리를 지나는 트럭
+# https://velog.io/@dramatic/Algorithm-%EB%8B%A4%EB%A6%AC%EB%A5%BC-%EC%A7%80%EB%82%98%EB%8A%94-%ED%8A%B8%EB%9F%AD
 
 def solution(bridge_length, weight, truck_weights):
     i = 0
