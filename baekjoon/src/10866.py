@@ -1,33 +1,34 @@
 # https://www.acmicpc.net/problem/10866
 # 덱
 
+from collections import deque
 import sys
 
-class deque():
+class teque(deque):
     def __init__(self):
-        self.datas = []
+        super()
         self.size = 0
 
-    def appendleft(self, data):
-        self.datas.insert(0, data)
+    def append(self, data):
+        super().append(data)
         self.size += 1
 
-    def append(self, data):
-        self.datas.append(data)
+    def appendleft(self, data):
+        super().appendleft(data)
         self.size += 1
     def popleft(self):
         if self.size == 0:
             return -1
         else:
             self.size -= 1
-            return self.datas.pop(0)
+            return super().popleft()
 
     def pop(self):
         if self.size == 0:
             return -1
         else:
             self.size -= 1
-            return self.datas.pop()
+            return super().pop()
 
     def getsize(self):
         return self.size
@@ -43,16 +44,16 @@ class deque():
         if self.size == 0:
             return -1
         else:
-            return self.datas[0]
+            return self[0]
 
     def back(self):
         if self.size == 0:
             return -1
         else:
-            return self.datas[-1]
+            return self[-1]
             
 
-d = deque()
+d = teque()
 N = int(sys.stdin.readline())
 
 for _ in range(N):
@@ -74,3 +75,4 @@ for _ in range(N):
         print(d.front())
     elif cmd[0] == "back":
         print(d.back())
+
